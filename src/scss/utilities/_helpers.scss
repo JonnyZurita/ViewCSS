@@ -2,8 +2,7 @@
 //                             UICSS Utilities Class
 // ==========================================================================
 
-/* Flexbox
--------------------------- */
+// Flexbox
 .u-flex            { @include flexbox() }
 
 .u-flex-wrap       { @include flex-wrap(wrap) }
@@ -28,8 +27,7 @@
 
 .u-align-left      { @include justify-content(flex-end) }
 
-/* Aling
--------------------------- */
+// Aling
 
 // Float
 .u-float-left   { float: left; }
@@ -46,8 +44,7 @@
 .u-text-right   { text-align: right; }
 
 
-/* Font
--------------------------- */
+// Font
 
 // Font Size
 .u-font-xs      { font-size: 12px; }
@@ -70,8 +67,7 @@
 .u-font-bold    { font-weight: 600; }
 
 
-/* Colors
--------------------------- */
+// Colors
 .u-cl-white        { color: $color-white; }
 
 .u-cl-gray         { color: $color-gray; }
@@ -85,8 +81,7 @@
 .u-cl-success      { color: $color-success; }
 
 
-/* Background
--------------------------- */
+// Background
 .u-bg-white        { background-color: $color-white; }
 
 .u-bg-gray         { background-color: $color-gray; }
@@ -100,8 +95,7 @@
 .u-bg-success      { background-color: $color-success; }
 
 
-/* Display
--------------------------- */
+// Display
 .u-block        { display: block; }
 
 .u-inline-block { display: inline-block; }
@@ -109,8 +103,7 @@
 .u-flex         { display: flex; }
 
 
-/* Cursor
--------------------------- */
+// Cursor
 .u-pointer {
     cursor: pointer
 }
