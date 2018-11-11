@@ -1,3 +1,23 @@
+// Variables
 @import 'settings/global';
-@import 'tools/flexbox';
+
+// Mixins
+@import 'tools/mixin.flexbox';
+@import 'tools/mixin.pxtorem';
+@import 'tools/mixin.button';
+@import 'tools/mixin.breackpoints';
+@import 'tools/mixin.grid';
+
+// Generic
+@import 'generic/box-sizing';
+@import 'generic/reset';
+@import 'generic/font-face';
+
+// Components
 @import 'components/button';
+
+// Objects
+@import 'objects/grid';
+
+// Utilities
+@import 'utilities/helpers';
