@@ -107,3 +107,21 @@
 .u-pointer {
     cursor: pointer
 }
+
+// Spacing
+.u-m-0  { margin: 0 !important; }
+.u-p-0  { margin: 0 !important; }
+
+// Each Margin y Padding EJ : u-mt-10...
+@each $space in $spaceamounts {
+    @each $side in $sides {
+        // Margin
+        .u-m#{str-slice($side, 0, 1)}-#{$space} {
+            margin-#{$side}: #{$space}px !important;
+        }
+        // Padding
+        .u-p#{str-slice($side, 0, 1)}-#{$space} {
+            padding-#{$side}: #{$space}px !important;
+        }
+    }
+}
