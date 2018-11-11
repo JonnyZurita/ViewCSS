@@ -1,0 +1,174 @@
+// ==========================================================================
+//                      UICSS Buttons
+// ==========================================================================
+
+
+// Default
+.ui-button {
+    display             : inline-block;
+    line-height         : 1;
+    white-space         : nowrap;
+    cursor              : pointer;
+    font-weight         : 500;
+    background          : $button-default-fill;
+    border              : 1px solid;
+    border-color        : $button-default-border;
+    color               : $button-default-color;
+    -webkit-appearance  : none;
+    text-align          : center;
+    box-sizing          : border-box;
+    outline             : none;
+    margin              : 0;
+    transition          : all .2s;
+    @include button-size (
+        $button-padding-y, 
+        $button-padding-x, 
+        $button-font-size,
+        $button-border-radius
+    );
+
+    &:hover,
+    &:focus {
+        color: $button-default-color;
+        border-color: lighten($button-default-border, $button-lighten-percent);
+        background: lighten($button-default-fill, $button-lighten-percent);
+    }
+
+    &:active {
+        color: $button-default-color;
+        border-color: darken($button-default-border, $button-darken-percent);
+        background: darken($button-default-fill, $button-darken-percent);
+    }
+
+    & [class*="el-icon-"] + span {
+        margin-left: 5px;
+    }
+
+    /* Full Width
+    -------------------------- */
+    &--block {
+        display: block;
+        width: 100%;
+    }
+
+    /* Loading
+    -------------------------- */
+    &--loading {
+        position: relative;
+        pointer-events: none;
+        &:before {
+            pointer-events: none;
+            content: '';
+            position: absolute;
+            left: -1px;
+            top: -1px;
+            right: -1px;
+            bottom: -1px;
+            border-radius: inherit;
+        } 
+    } 
+
+    /* Round
+    -------------------------- */
+    &--round {
+        border-radius: 20px;
+        padding: 10px 23px;
+    } 
+
+    /* Circle
+    -------------------------- */
+    &--circle {
+        border-radius: $button-circle-size ;
+        width: $button-circle-size ;
+        height: $button-circle-size ;
+    } 
+
+    /* Large
+    -------------------------- */
+    &--large {
+        @include button-size (
+            $button-large-padding-y, 
+            $button-large-padding-x, 
+            $button-large-font-size, 
+            $border-radius-small
+        );
+    }
+
+    /* Small
+    -------------------------- */
+    &--small {
+        @include button-size (
+            $button-small-padding-y, 
+            $button-small-padding-x, 
+            $button-small-font-size, 
+            $border-radius-small
+        );
+    }
+
+    /* Mini
+    -------------------------- */
+    &--mini {
+        @include button-size (
+            $button-mini-padding-y, 
+            $button-mini-padding-x, 
+            $button-mini-font-size, 
+            $border-radius-small
+        );
+    }
+
+    /* Primary
+    -------------------------- */
+    &--primary {
+        @include button-variant (
+            $button-primary-color, 
+            $button-primary-fill, 
+            $button-primary-border, 
+            $button-primary-shadown
+        );
+    }
+
+    /* Secondary
+    -------------------------- */
+    &--secondary {
+        @include button-variant (
+            $button-secondary-color, 
+            $button-secondary-fill, 
+            $button-secondary-border, 
+            $button-secondary-shadown
+        );
+    }
+
+    /* Sucess
+    -------------------------- */
+    &--success {
+        @include button-variant (
+            $button-success-color, 
+            $button-success-fill, 
+            $button-success-border, 
+            $button-success-shadown
+        );
+    }
+
+    /* Warning
+    -------------------------- */
+    &--warning {
+        @include button-variant (
+            $button-warning-color, 
+            $button-warning-fill, 
+            $button-warning-border, 
+            $button-warning-shadown
+        );
+    }
+
+    /* Danger
+    -------------------------- */
+    &--danger {
+        @include button-variant (
+            $button-danger-color, 
+            $button-danger-fill, 
+            $button-danger-border, 
+            $button-danger-shadown
+        );
+    }
+
+}

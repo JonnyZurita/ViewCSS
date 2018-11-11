@@ -1,0 +1,53 @@
+// ==========================================================================
+//                             UICSS Mixin Button
+// ==========================================================================
+
+//  Button Variant
+@mixin button-variant ($color, $background-color, $border-color, $box-shadown-color) {
+    color: $color;
+    background-color: $background-color;
+    border-color: $border-color;
+    box-shadow: 0 1px 3px rgba($box-shadown-color, 0.3);
+    &:hover,
+    &:focus {
+        border-color: lighten($border-color, $button-lighten-percent);
+        background: lighten($background-color, $button-lighten-percent);
+        color: $color;
+        box-shadow: 0 3px 16px rgba($box-shadown-color, 0.3);
+    }
+
+    &:active {
+        border-color: darken($background-color, $button-darken-percent );
+        background: darken($border-color, $button-darken-percent );
+        color: $color;
+        outline: none;
+    }
+    
+    // When Plain
+    &.ui-button--plain {
+        background: $color;
+        border-color: $background-color;
+        color: $background-color;
+        box-shadow: none;
+
+        &:hover,
+        &:focus {
+            background: $background-color;
+            border-color: $background-color;
+            color: $color;
+        }
+
+        &:active {
+            background: darken($background-color, $button-darken-percent );
+            background: darken($border-color, $button-darken-percent );
+            color: $color;
+        }
+    }
+}
+
+//  Button Size
+@mixin button-size ($padding-vertical, $padding-horizontal, $font-size, $border-radius) {
+    padding: $padding-vertical $padding-horizontal;
+    font-size: $font-size;
+    border-radius: $border-radius;
+}
