@@ -1,0 +1,116 @@
+// ==========================================================================
+//                             UICSS Utilities Class
+// ==========================================================================
+
+/* Flexbox
+-------------------------- */
+.u-flex            { @include flexbox() }
+
+.u-flex-wrap       { @include flex-wrap(wrap) }
+
+.u-flex-column     { @include flex-direction(column) }
+
+.u-flex-row        { @include flex-direction(row) }
+
+.u-align-center-y  { @include align-items(center) }
+
+.u-align-top       { @include align-items(start) }
+
+.u-align-bottom    { @include align-items(end) }
+
+.u-align-center-x  { @include justify-content(center) }
+
+.u-align-around    { @include justify-content(space-around) }
+
+.u-align-between   { @include justify-content(space-between) }
+
+.u-align-right     { @include justify-content(flex-start) }
+
+.u-align-left      { @include justify-content(flex-end) }
+
+/* Aling
+-------------------------- */
+
+// Float
+.u-float-left   { float: left; }
+
+.u-float-right  { float: right; }
+
+// Text
+.u-text-center  { text-align: center; }
+
+.u-text-justify { text-align: justify; }
+
+.u-text-left    { text-align: left; }
+
+.u-text-right   { text-align: right; }
+
+
+/* Font
+-------------------------- */
+
+// Font Size
+.u-font-xs      { font-size: 12px; }
+
+.u-font-sm      { font-size: 14px; }
+
+.u-font-md      { font-size: 16px; }
+
+.u-font-lg      { font-size: 18px; }
+
+.u-font-xlg     { font-size: 24px; }
+
+// Font Weight
+.u-font-light   { font-weight: 300; }
+
+.u-font-regular { font-weight: 400; }
+
+.u-font-medium  { font-weight: 500; }
+
+.u-font-bold    { font-weight: 600; }
+
+
+/* Colors
+-------------------------- */
+.u-cl-white        { color: $color-white; }
+
+.u-cl-gray         { color: $color-gray; }
+
+.u-cl-primary      { color: $color-primary; }
+
+.u-cl-secondary    { color: $color-secondary; }
+
+.u-cl-danger       { color: $color-danger; }
+
+.u-cl-success      { color: $color-success; }
+
+
+/* Background
+-------------------------- */
+.u-bg-white        { background-color: $color-white; }
+
+.u-bg-gray         { background-color: $color-gray; }
+
+.u-bg-primary      { background-color: $color-primary; }
+
+.u-bg-secondary    { background-color: $color-secondary; }
+
+.u-bg-danger       { background-color: $color-danger; }
+
+.u-bg-success      { background-color: $color-success; }
+
+
+/* Display
+-------------------------- */
+.u-block        { display: block; }
+
+.u-inline-block { display: inline-block; }
+
+.u-flex         { display: flex; }
+
+
+/* Cursor
+-------------------------- */
+.u-pointer {
+    cursor: pointer
+}
