@@ -44,15 +44,13 @@
         margin-left: 5px;
     }
 
-    /* Full Width
-    -------------------------- */
+    // Full Width
     &--block {
         display: block;
         width: 100%;
     }
 
-    /* Loading
-    -------------------------- */
+    // Loading
     &--loading {
         position: relative;
         pointer-events: none;
@@ -68,23 +66,20 @@
         } 
     } 
 
-    /* Round
-    -------------------------- */
+    // Round
     &--round {
         border-radius: 20px;
         padding: 10px 23px;
     } 
 
-    /* Circle
-    -------------------------- */
+    // Circle
     &--circle {
         border-radius: $button-circle-size ;
         width: $button-circle-size ;
         height: $button-circle-size ;
     } 
 
-    /* Large
-    -------------------------- */
+    // Large
     &--large {
         @include button-size (
             $button-large-padding-y, 
@@ -94,8 +89,7 @@
         );
     }
 
-    /* Small
-    -------------------------- */
+    // Small
     &--small {
         @include button-size (
             $button-small-padding-y, 
@@ -105,8 +99,7 @@
         );
     }
 
-    /* Mini
-    -------------------------- */
+    // Mini
     &--mini {
         @include button-size (
             $button-mini-padding-y, 
@@ -116,8 +109,7 @@
         );
     }
 
-    /* Primary
-    -------------------------- */
+    // Primary
     &--primary {
         @include button-variant (
             $button-primary-color, 
@@ -127,8 +119,7 @@
         );
     }
 
-    /* Secondary
-    -------------------------- */
+    // Secondary
     &--secondary {
         @include button-variant (
             $button-secondary-color, 
@@ -138,8 +129,7 @@
         );
     }
 
-    /* Sucess
-    -------------------------- */
+    // Sucess
     &--success {
         @include button-variant (
             $button-success-color, 
@@ -149,8 +139,7 @@
         );
     }
 
-    /* Warning
-    -------------------------- */
+    // Warning
     &--warning {
         @include button-variant (
             $button-warning-color, 
@@ -160,8 +149,7 @@
         );
     }
 
-    /* Danger
-    -------------------------- */
+    // Danger
     &--danger {
         @include button-variant (
             $button-danger-color, 

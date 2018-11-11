@@ -2,8 +2,7 @@
 //                             UICSS Var Globals
 // ==========================================================================
 
-/* Colors
--------------------------- */
+// Colors
 
 // Site
 $color-primary     :  rgb(37,98,240);
@@ -23,8 +22,7 @@ $color-gray        : rgb(230,230,230);
 $color-light-gray  : rgb(240,240,240);
 
 
-/* Border
--------------------------- */
+// Border
 $border-width-base: 1px;
 $border-style-base: solid;
 $border-color-base: $color-gray;
@@ -34,8 +32,7 @@ $border-radius-base: 3px;
 $border-radius-small: 2px;
 $border-radius-circle: 100%;
 
-/* Button
--------------------------- */
+// Button
 
 $button-font-size        : 14px;
 $button-border-radius    : 4px;
@@ -100,8 +97,7 @@ $button-circle-size      : 40px;
 $button-darken-percent   : 10%;
 $button-lighten-percent  : 5%;
 
-/* Grid
--------------------------- */
+// Grid
 $enable-grid-classes   : true !default;
 $grid-columns          :  12 !default;
 $grid-gutter-width     :  30px !default;
