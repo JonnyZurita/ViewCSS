@@ -1,0 +1,109 @@
+// ==========================================================================
+//                             UICSS Var Globals
+// ==========================================================================
+
+/* Colors
+-------------------------- */
+
+// Site
+$color-primary     :  rgb(37,98,240);
+$color-secondary   :  rgb(0,51,102);
+$color-three       :  rgb(242, 93, 62);
+
+// Basic
+$color-success     : rgb(38,218,210);
+$color-warning     : rgb(255,255,59);
+$color-danger      : rgb(255,46,88);
+$color-info        : rgb(37,98,240);
+$color-white       : rgb(255,255,255);
+$color-black       : rgb(0,0,0);
+$color-light-black : rgb(51,51,51);
+$color-dark-gray   : rgb(200,200,200);
+$color-gray        : rgb(230,230,230);
+$color-light-gray  : rgb(240,240,240);
+
+
+/* Border
+-------------------------- */
+$border-width-base: 1px;
+$border-style-base: solid;
+$border-color-base: $color-gray;
+$border-color-hover: $color-light-gray;
+$border-base: $border-width-base $border-style-base $border-color-base;
+$border-radius-base: 3px;
+$border-radius-small: 2px;
+$border-radius-circle: 100%;
+
+/* Button
+-------------------------- */
+
+$button-font-size        : 14px;
+$button-border-radius    : 4px;
+$button-padding-y        : 10px;
+$button-padding-x        : 15px;
+
+$button-large-font-size  : 16px;
+$button-large-padding-y  : 11px;
+$button-large-padding-x  : 19px;
+
+$button-small-font-size  : 12px;
+$button-small-padding-y  : 7px;
+$button-small-padding-x  : 9px;
+
+$button-mini-font-size   : 12px;
+$button-mini-padding-y   : 4px;
+$button-mini-padding-x   : 4px;
+
+$button-default-color    : $color-dark-gray;
+$button-default-fill     : $color-gray;
+$button-default-border   : $color-gray;
+
+$button-ghost-color      : $color-dark-gray;
+$button-ghost-fill       : transparent;
+$button-ghost-border     : none;
+
+$button-disabled-color   : $color-gray;
+$button-disabled-fill    : $color-light-gray;
+$button-disabled-border  : $color-light-gray;
+
+$button-primary-border   : $color-primary;
+$button-primary-color    : $color-white;
+$button-primary-fill     : $color-primary;
+$button-primary-shadown  : $color-primary;
+
+$button-secondary-border : $color-secondary;
+$button-secondary-color  : $color-white;
+$button-secondary-fill   : $color-secondary;
+$button-secondary-shadown: $color-secondary;
+
+$button-success-border   : $color-success;
+$button-success-color    : $color-white;
+$button-success-fill     : $color-success;
+$button-success-shadown  : $color-success;
+
+$button-warning-border   : $color-warning;
+$button-warning-color    : $color-white;
+$button-warning-fill     : $color-warning;
+$button-warning-shadown  : $color-warning;
+
+$button-danger-border    : $color-danger;
+$button-danger-color     : $color-white;
+$button-danger-fill      : $color-danger;
+$button-danger-shadown   : $color-danger;
+
+$button-info-border      : $color-info;
+$button-info-color       : $color-white;
+$button-info-fill        : $color-info;
+
+$button-circle-size      : 40px;
+
+$button-darken-percent   : 10%;
+$button-lighten-percent  : 5%;
+
+/* Grid
+-------------------------- */
+$enable-grid-classes   : true !default;
+$grid-columns          :  12 !default;
+$grid-gutter-width     :  30px !default;
+$container-max-widths  : ( sm: 540px, md: 720px, lg: 960px, xl: 1140px ) !default;
+$grid-breakpoints      : ( xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px ) !default;
