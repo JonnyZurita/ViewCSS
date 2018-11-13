@@ -21,6 +21,9 @@ $color-dark-gray   : rgb(200,200,200);
 $color-gray        : rgb(230,230,230);
 $color-light-gray  : rgb(240,240,240);
 
+// Body
+$body-bg:                   $color-white !default;
+$body-color:                $color-gray !default;
 
 // Border
 $border-width-base: 1px;
@@ -31,6 +34,28 @@ $border-base: $border-width-base $border-style-base $border-color-base;
 $border-radius-base: 3px;
 $border-radius-small: 2px;
 $border-radius-circle: 100%;
+
+// Font
+$font-size-base       :   1rem;
+$font-size-lg         :   ($font-size-base * 1.25) !default;
+$font-size-sm         :   ($font-size-base * .875) !default;
+$font-color-base      :   $color-gray;
+$font-family-base     :   'Arial';
+$font-weight-light    :   300 !default;
+$font-weight-normal   :   400 !default;
+$font-weight-bold     :   600 !default;
+
+// Size
+$size-base: 16px;
+
+// z-index
+$index-normal: 1;
+$index-top: 20;
+$index-popper: 30;
+
+// Icon
+$icon-color : $color-gray;
+$icon-size  : 16px;
 
 // Button
 
@@ -103,3 +128,7 @@ $grid-columns          :  12 !default;
 $grid-gutter-width     :  30px !default;
 $container-max-widths  : ( sm: 540px, md: 720px, lg: 960px, xl: 1140px ) !default;
 $grid-breakpoints      : ( xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px ) !default;
+
+// Spacing
+$spaceamounts: (0, 5, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100);
+$sides: (top, bottom, left, right);
