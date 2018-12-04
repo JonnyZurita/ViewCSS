@@ -1,0 +1,147 @@
+@require './_theme'
+
+// ============================================================
+// ViewCSS variables
+// ============================================================
+
+$color-pack := true
+
+// Font
+// ============================================================
+$font-size := {
+  xsmall: 10px,
+  small: 12px,
+  regular: 14px,
+  medium: 16px,
+  large: 18px,
+  xlarge: 24px,
+}
+
+$font-weights := {
+  thin: 100,
+  light: 300,
+  regular: 400,
+  medium: 500,
+  bold: 600,
+  black: 900
+}
+
+// Root
+// ===========================================================
+$font-family-root := 'Roboto', sans-serif
+$font-size-root := $font-size.medium
+$color-root := $blue-grey.lighten-2
+$background-color-root := $colors.white
+
+// Grid
+// ============================================================
+$grid-breakpoints := {
+  xs: 0
+  sm: 600px
+  md: 960px
+  lg: (1280px - 16px)
+  xl: (1920px - 16px)
+}
+
+$grid-gutter := 8px
+$grid-columns := 12
+$grid-gutters := {
+  xs: ($grid-gutter / 4)
+  sm: ($grid-gutter / 2)
+  md: $grid-gutter
+  lg: ($grid-gutter * 2)
+  xl: ($grid-gutter * 3)
+}
+
+$container-max-widths := {
+  md: $grid-breakpoints.md
+  lg: $grid-breakpoints.lg
+  xl: $grid-breakpoints.xl
+}
+
+// Spacing
+// ============================================================
+$spacer := 16px
+$spacer-x := $spacer
+$spacer-y := $spacer
+$spacers := {
+  zero: {
+    x: 0,
+    y: 0
+  },
+  one: {
+    x: ($spacer-x * .25),
+    y: ($spacer-y * .25)
+  },
+  two: {
+    x: ($spacer-x * .5),
+    y: ($spacer-y * .5)
+  },
+  three: {
+    x: $spacer-x,
+    y: $spacer-y
+  },
+  four: {
+    x: ($spacer-x * 1.5),
+    y: ($spacer-y * 1.5)
+  },
+  five: {
+    x: ($spacer-x * 3),
+    y: ($spacer-y * 3)
+  }
+}
+
+// Transitions
+$transition := {
+  fast-out-slow-in: cubic-bezier(0.4, 0.0, 0.2, 1),
+  linear-out-slow-in: cubic-bezier(0.0, 0.0, 0.2, 1),
+  fast-out-linear-in: cubic-bezier(0.4, 0.0, 1, 1),
+  ease-in-out: cubic-bezier(0.4, 0.0, 0.6, 1),
+  fast-in-fast-out: cubic-bezier(.25,.8,.25,1),
+  swing: cubic-bezier(.25,.8,.50,1)
+}
+
+$primary-transition := 0.3s $transition.swing
+$secondary-transition := 0.2s $transition.ease-in-out
+
+// Components
+// ============================================================
+
+/** Buttons */
+
+// Base
+$button-color := $colors.white
+$button-background-color := $blue-grey.lighten-2
+$button-border-radius := 4px
+$button-font-weight := $font-weights.regular
+$button-font-size := $font-size.regular
+$button-padding := .625rem 1.25rem
+$button-line-height := 1.4
+$button-box-shadow := 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08)
+$button-box-shadow-hover := 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08)
+$button-text-transform := uppercase
+$button-min-width:= 110px;
+
+$button-primary-color:= $colors.white
+$button-primary-background-color:= $colors.primary
+$button-secondary-color:= $colors.white
+$button-secondary-background-color:= $colors.secondary
+$button-success-color:= $colors.white
+$button-success-background-color:= $colors.success
+$button-danger-color:= $colors.white
+$button-danger-background-color:= $colors.danger
+$button-warning-color:= $colors.white
+$button-warning-background-color:= $colors.warning
+$button-info-color:= $colors.white
+$button-info-background-color:= $colors.info
+
+$button-mini-font-size:= $font-size.small
+$button-mini-padding:= 4px
+$button-mini-min-width:= 50px;
+
+$button-small-font-size:= $font-size.small
+$button-small-padding:= 7px 9px
+
+$button-large-font-size:= $font-size.medium
+$button-large-padding:= 10px 30px
+$button-large-min-width:= 150px;
